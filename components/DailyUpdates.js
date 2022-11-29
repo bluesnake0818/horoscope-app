@@ -8,7 +8,6 @@ import { GlobalStyles } from '../constants/styles'
 
 // components
 import DailyFortuneHoroscopeCard from './DailyFortuneHoroscopeCard'
-import DailyBenefactorHoroscopeCard from './DailyBenefactorHoroscopeCard'
 
 // data
 import { USERS } from '../data/User';
@@ -214,11 +213,6 @@ const DailyUpdates = ({ currentUser, calendarDateGanJiObj }) => {
         <Text style={styles.categoryTitle}>Your day at a glance</Text>
         <Pressable onPress={dailyHoroscopePressHandler}>
           <DailyFortuneHoroscopeCard />
-        </Pressable>
-        <Pressable onPress={dailyBenefactorPressHandler}>
-          <DailyBenefactorHoroscopeCard 
-            children="Your secret benefactor today"
-          />
         </Pressable>
       </View>
     </ScrollView>
